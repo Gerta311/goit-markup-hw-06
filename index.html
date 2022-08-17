@@ -512,11 +512,22 @@
             ></textarea>
           </div>
           <div class="form">
-            <input type="checkbox" name="yes" id="yes" />
-            <label for="yes" class="form-label"
-              ><p class="form-title">Погоджуюся з розсилкою та приймаю</p>
-              <a href="" class="modal-link">Умови договору</a></label
-            >
+            <input
+              required
+              type="checkbox"
+              name="yes"
+              id="user-yes"
+              class="modal-check hidden"
+            />
+            <label for="user-yes" class="form-label">
+              <span
+                ><svg class="check-icon" width="11px" height="18px">
+                  <use href="./images/icon.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="modal-link">Умови договору</a>
+            </label>
           </div>
           <button type="submit" class="modal-btn">Відправити</button>
         </form>
